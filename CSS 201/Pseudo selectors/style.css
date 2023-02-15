@@ -1,0 +1,15 @@
+.box{
+    height: 20px;
+    border: 1px solid blue;
+}
+.box:not(.dontselectme) {
+    background-color: blue;
+}
+.box:nth-child(8) {
+    background-color: yellow;
+    color: black;
+}
+.box:hover{
+    background-color: gray;
+}
+

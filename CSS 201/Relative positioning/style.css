@@ -1,0 +1,10 @@
+.box{
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    position: relative;
+   top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+}

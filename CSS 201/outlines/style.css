@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid red;
+    outline: 5px solid #ffd700;
+    outline-offset: 10px;
+    margin: 30px;
+    box-sizing: border-box;
+
+}

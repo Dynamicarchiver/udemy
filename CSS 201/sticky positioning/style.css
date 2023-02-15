@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.blue{
+    background-color: blue;
+}
+.box{
+    position: sticky;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    top: 0;
+    color: black;
+}

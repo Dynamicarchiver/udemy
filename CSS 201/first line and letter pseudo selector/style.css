@@ -1,0 +1,8 @@
+p::first-letter{
+    font-size: 33px;
+    float: left;
+}
+
+p::first-line{
+    font-weight: bold;
+}

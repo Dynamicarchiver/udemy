@@ -1,0 +1,14 @@
+a{
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 15px;
+    transition: background-color 2s, color .2s, padding 1s;
+}
+a:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+}

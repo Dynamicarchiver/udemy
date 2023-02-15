@@ -1,0 +1,10 @@
+#parent > .box{
+    height: 20px;
+    border: 1px solid blue;
+}
+#parent .box + .box{
+    background-color: red;
+}
+#parent .box ~ .box{
+    background-color: black;
+}
