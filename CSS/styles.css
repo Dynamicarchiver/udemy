@@ -1,0 +1,14 @@
+body{
+    background-image: url(../HTML/photo-1661956601030-fdfb9c7e9e2f.avif);
+}
+#box{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    opacity: 0.5;
+}
