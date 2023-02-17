@@ -1,0 +1,252 @@
+
+/***************** GENERAL STYLES **********************/
+body{
+    background: rgb(17,17,17);
+    background: radial-gradient(circle, rgba(17,17,17,1) 0%, rgba(26,26,26,1) 99%);
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+h2, h3, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.5rem;
+}
+h3, .hero_text button, a{
+    text-transform: uppercase;
+}
+h2{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+.container{
+    margin: 10px auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    background-color: #9f101a;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+.know_more{
+    color: #c61a26;
+}
+/**************HEADER STYLES *************************/
+.navigation{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background: rgb(17,17,17);
+    background: radial-gradient(circle, rgba(17,17,17,1) 0%, rgba(26,26,26,1) 99%);
+}
+.logo{
+    flex-basis: 100%;
+}
+.logo_img{
+    border-radius: 30%;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    padding: 0 10px;
+    font-size: 12px;
+}
+.hero{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: rgb(17,17,17);
+    background: radial-gradient(circle, rgba(17,17,17,1) 0%, rgba(26,26,26,1) 99%);
+}
+.hero-img{
+    width: 350px;
+    border-radius: 20%;
+    margin: 0 50px;
+}
+.hero_text{
+    margin-left: 20px;
+    z-index: 10;
+}
+.hero_text h4{
+    color: #d42c30;
+    font-weight: 900;
+    font-size: 1.2rem;
+} 
+.hero_text p{
+    padding-right: 50px;
+}
+@media screen and (max-width: 640px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image, .hero_text{
+        margin: 0 auto;
+        flex-basis: 100%;
+    }
+}
+.about{
+    position: relative;
+}
+.about_background{
+    width: 70%;
+    height: 980px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: -100px;
+}
+.aboutme, .portfolio, .featured_projects, .contact{
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+.ui_design, .branding{
+    background-color: #1e1e1e;
+}
+.product_design{
+    background-color: #c61a26;
+    margin: 0 20px;
+}
+.ui_design, .product_design, .branding{
+    padding: 50px;
+}
+.product_design i, .product_design a{
+    color: #fff;
+}
+.aboutme_icon{
+    color: #c61a26;
+    font-size: 5rem;
+}
+.experience{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 100px;
+}
+.experience h5, .portfolio_head{
+    color: #c61a26;
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 40px 0;
+    font-family: 'Anton', sans-serif;
+}
+.clients, .work_experience, .projects, .achievements{
+    padding: 20px 50px;
+    background-color: #1e1e1e ;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: #fff;
+}
+.portfolio_head{
+    color: #ef403f;
+    font-size: 3rem;
+}
+.portfolio_body{
+    padding: 50px;
+}
+.featured_projects{
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    margin-top: 100px;
+    width: 60%;
+    gap: 50px;
+}
+.project_header_text{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.foodasa, .mozalk{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.featured_projects div .image{
+    background-color: #1e1e1e;
+}
+.featured_projects div .image img{
+    width: 90%;
+    position: relative;
+    right: -25px;
+    height: 400px;
+    padding: 50px 0;
+}
+.contact{
+    width: 70%;
+    position: relative;
+    left: 50px;
+    padding: 50px;
+    background-color: #1e1e1e;
+    margin-top: 50px;
+}
+.contact_background{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    bottom: -1750px;
+    z-index: -1;
+}
+.contact_text{
+    flex-basis: 70%;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    padding: 20px;
+}
+.bottom{
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.socials{
+    display: flex;
+}
+.socials a i{
+    padding: 0 20px;
+}
+.creator{
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.contact_button {
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+}
+.contact_button button{
+    font-weight: 900;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+}
+
