@@ -13,7 +13,7 @@
     animation-direction: alternate;
 }
 
-/*@keyframes slideMe {
+@keyframes slideMe {
     from{
         top: 0;
         left: 0;
@@ -23,7 +23,7 @@
     }
 
 }
-*/
+
 
 /*@keyframes slideMe {
     0%{
@@ -39,7 +39,7 @@
     }
 }
 */
-@keyframes slideMe {
+/* @keyframes slideMe {
     0% {
         top: 0;
         left: 0;
@@ -65,4 +65,4 @@
         left: 0;
     }
     
-}
+} */
