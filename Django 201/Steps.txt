@@ -1,0 +1,63 @@
+Steps To Launch Django
+    CREATING DJANGO PROJECT
+        1.Go to your terminal
+        2.Create a virtual environment and install Django(optional: use pipenv as pipenv install Django)
+
+    STARTING DJANGO PROJECT
+        1.create a Django project(use the command: 'django-admin startproject til .')
+        2.We can now run our Django project now(use the command: python manage.py runserver 0.0.0.0:8000)
+        after this this it might show some error but dont panic just do the next step
+        3.You run your migration(use the command: python manage.py migrate)
+    
+    ADDING .gitignore TO YOUR PROJECT
+        1.Create a .gitignore file in order to set which file or folder use will be adding to your github
+    
+    CREATING YOUR FIRST APP
+        1.crete a user with "python manage.py createsuperuser
+        2.Write your username, email-address, password.
+        3.create app with the command "python manage.py startapp app_name"
+        4.Add the new app to setting.py under your django-project
+    CREATING YOUR FIRST MODEL
+     1.create models in the models.py under feed using class object
+     2.Create a migration for the new model created : "python manage.py makemigrations"
+     3.Run migration using: "python manage.py migrate"
+     
+     REGISTERING YOUR MODEL WITH THE DJANGO admin
+        1.Go to admin.py under feed and import your new model
+        2.register your model with class object: class PostAdmin(admin.ModelAdmin): pass
+        3.add to the admin with : adim.site.register(Model_name, PostAdmin)
+        4.Make your post save with the name of your post not postobject:
+            a.Go to models.py and add the function: def __str__(self): return self.text[0:100]
+
+        ADDING A DATE TIME FIELD
+            1.Go to models.py and in the Post class set date = models.DateTimeField(auto_now=True)
+            2.Make migrations and migrate
+
+        HomePage ListView
+            1.Go to views.py  and import ListView and post
+            2.create a HomePage class and set its http_method_names,template_name, model, context_object_name, queryset
+            3.create a urls.py under app_name and import path and views.
+            4.set app_name = Your app_name and create a urls patten
+            5. In your django project eg til, import include and import urls from app_name create a path that go to HomePage
+
+        SETTING TEMPLATE LOCATION
+            1.open settings.py under till
+            2. set the dir template in templates dictionary
+        
+        Your First template
+            1.In view.py change your template name to your app_name instead of your project name
+            2. Create a template page in your app_name folder
+
+        Your base template
+            1.create base.html page in your project templates folder and add the necessary html
+            2. create your block template
+        
+        Template Loops
+            1. create a for loop that run through all posts
+
+        Adding login, logout, password, register
+            1.Install django-allauth
+            2.Enable django.contrib.sites in setting.py
+            3.Enable all allauth features you might want to use
+            4.configure allauth setting you might be
+            5.make migrations and migrate
